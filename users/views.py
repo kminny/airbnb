@@ -9,6 +9,7 @@ from django.core.files.base import ContentFile
 from django.http import HttpResponse
 from django.shortcuts import redirect, reverse
 from django.urls import reverse_lazy
+from django.utils import translation
 from django.views.generic import DetailView, FormView, UpdateView
 from . import forms, models, mixins
 
@@ -301,5 +302,5 @@ def switch_hosting(request):
 def switch_language(request):
     lang = request.GET.get("lang", None)
     if lang is not None:
-        pass
+        request.session[translation.LANGUAGE_SESSION_KEY] = lang
     return HttpResponse(status=200)
