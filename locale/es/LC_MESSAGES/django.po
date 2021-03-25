@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-25 18:54+0900\n"
+"POT-Creation-Date: 2021-03-25 20:00+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,10 +22,51 @@ msgstr ""
 msgid "Search by City"
 msgstr "Buscar por Ciudad"
 
-#: templates/partials/footer.html:4
+#: templates/partials/footer.html:5
 msgid "Please don't copy us."
 msgstr "Por favor no nos copies"
 
-#: templates/partials/footer.html:6
+#: templates/partials/footer.html:7
 msgid "All rights reserved"
 msgstr "Todos los derechos reservados"
+
+#: templates/rooms/room_list.html:26
+#, python-format
+msgid "Page %(current_page)s of %(total_pages)s"
+msgstr "Pagina %(current_page)s de %(total_pages)s"
+
+#: users/mixins.py:13
+msgid "Can't go there"
+msgstr "No puedes ir ahi"
+
+#: users/models.py:17
+msgid "Male"
+msgstr "Hombre"
+
+#: users/models.py:18
+msgid "Female"
+msgstr "Mujer"
+
+#: users/models.py:19
+msgid "Other"
+msgstr "Otro"
+
+#: users/models.py:26
+msgid "English"
+msgstr "Ingles"
+
+#: users/models.py:27
+msgid "Korean"
+msgstr "Coreano"
+
+#: users/models.py:47
+msgid "gender"
+msgstr "genero"
+
+#: users/models.py:49
+msgid "bio"
+msgstr "biografia"
+
+#: users/models.py:52
+msgid "language"
+msgstr "lenguage"
