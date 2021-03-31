@@ -162,5 +162,6 @@ LOCALE_PATHS = (os.path.join(BASE_DIR, "locale"),)
 # Deply
 
 ALLOWED_HOSTS = [
-    "http://airbnb-clone.eba-mrzzmnjm.ap-northeast-2.elasticbeanstalk.com/"
+    "http://airbnb-clone.eba-mrzzmnjm.ap-northeast-2.elasticbeanstalk.com/",
+    "airbnb-clone.eba-mrzzmnjm.ap-northeast-2.elasticbeanstalk.com",
 ]
