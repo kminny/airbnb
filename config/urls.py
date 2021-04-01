@@ -18,6 +18,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path, include
 
+
+def trigger_error(request):
+    division_by_zero = 1 / 0
+
+
 urlpatterns = [
     path("", include("core.urls", namespace="core")),
     path("admin/", admin.site.urls),
@@ -27,6 +32,7 @@ urlpatterns = [
     path("lists/", include("lists.urls", namespace="lists")),
     path("conversations/", include("conversations.urls", namespace="conversations")),
     path("users/", include("users.urls", namespace="login")),
+    path("sentry-debug/", trigger_error),
 ]
 
 if settings.DEBUG:
